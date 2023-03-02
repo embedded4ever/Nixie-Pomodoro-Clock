@@ -1,0 +1,3 @@
+[submodule "NixiePomodoro/timer"]
+	path = NixiePomodoro/timer
+	url = https://github.com/volkanunal/Stimer.git
