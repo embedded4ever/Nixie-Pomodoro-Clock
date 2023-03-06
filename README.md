@@ -15,5 +15,8 @@ It is a work that I do for my motivation to work in the evenings, using the pomo
 
 ![Feedback](./images/feedback_animated.gif)
 
-## Test Videos
-![](./images/lookup.mp4)
+## Test Video <3
+
+<video width="320" height="480" controls>
+  <source src="./images/lookup.mp4" type="video/mp4">
+</video>
