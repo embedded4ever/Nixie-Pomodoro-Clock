@@ -12,7 +12,7 @@
 volatile ut32_timer systick_cnt;
 
 timer_t t1;
-int time_holder;
+uint8_t time_holder;
 OneButton set_button(SETTINGS_BUTTON);
 
 void init_timer_to_1ms()
@@ -44,7 +44,7 @@ ISR(TIMER0_COMPA_vect)
  ++systick_cnt;
 }
 
-void ShiftOutData(uint32_t nixie_bits)
+void send_data_to_driver(uint32_t nixie_bits)
 {
   digitalWrite(EN_PIN, 0); 
  
@@ -78,7 +78,7 @@ void nixie_display(uint8_t time)
   
   nixie_bits |= (1UL << nixie1[digit1]) | (1UL << nixie2[digit2]);
   
-  ShiftOutData(nixie_bits);
+  send_data_to_driver(nixie_bits);
 }
 
 void nixie_tmr_cb(void* arg)
