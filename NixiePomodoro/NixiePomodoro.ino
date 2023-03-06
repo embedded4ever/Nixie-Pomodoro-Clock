@@ -83,7 +83,7 @@ void nixie_display(uint8_t time)
 
 void nixie_tmr_cb(void* arg)
 {  
-  int* disp_val = (int*)arg;
+  uint8_t* disp_val = (uint8_t*)arg;
   if (0 == *disp_val)
   {
     unlink_timer(&t1);
