@@ -115,7 +115,7 @@ void set_button_one_click_cb(void)
 
 void set_button_after_long_press_cb(void* arg)
 {
-  init_timer(&t1, LOOP, arg, nixie_tmr_cb, 1000);
+  init_timer(&t1, LOOP, arg, nixie_tmr_cb, 60000);
   start_timer(&t1);
 }
 

@@ -19,5 +19,6 @@ It is a work that I do for my motivation to work in the evenings, using the pomo
 You can set the minute with a button, after setting the minute, it will start working after a long press.
 
 ##  Awesome 😍
+The gif is just for visualization, the way it works is in minutes, not seconds.
 
 ![](/images/lookup.gif)
